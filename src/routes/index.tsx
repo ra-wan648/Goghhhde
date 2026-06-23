@@ -51,13 +51,22 @@ function Home() {
 function Hero() {
   return (
     <section className="relative min-h-[100svh] flex items-center overflow-hidden pt-32 pb-20 bg-[#050505]">
-      <iframe
-        src="https://player.vimeo.com/video/1203748455?autoplay=1&muted=1&loop=1&background=1&quality=auto"
-        allow="autoplay; fullscreen"
-        title="Hero background video"
-        className="absolute top-0 left-0 w-full h-full border-0 pointer-events-none"
-        style={{ zIndex: 0 }}
-      />
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ zIndex: 0 }}>
+        <iframe
+          src="https://player.vimeo.com/video/1203748455?autoplay=1&muted=1&loop=1&background=1&autopause=0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          title="Hero background video"
+          frameBorder={0}
+          className="absolute top-1/2 left-1/2 border-0"
+          style={{
+            width: "100vw",
+            height: "56.25vw",
+            minHeight: "100%",
+            minWidth: "177.77vh",
+            transform: "translate(-50%, -50%)",
+          }}
+        />
+      </div>
       <div
         className="absolute top-0 left-0 w-full h-full pointer-events-none"
         style={{ background: "rgba(0,0,0,0.4)", zIndex: 1 }}
