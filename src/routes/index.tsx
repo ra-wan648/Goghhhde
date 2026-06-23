@@ -57,13 +57,7 @@ function Hero() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,#050505_85%)]" />
       </div>
       <div className="relative z-10 mx-auto max-w-7xl px-5 md:px-8 w-full">
-        <Reveal delay={100}>
-          <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-foreground/70">
-            <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)] shadow-[0_0_10px_var(--accent)]" />
-            Cinematic Post-Production Studio
-          </div>
-        </Reveal>
-        <h1 className="mt-8 font-display text-[14vw] md:text-[10vw] leading-[0.92] tracking-[-0.04em]">
+        <h1 className="font-display text-[14vw] md:text-[10vw] leading-[0.92] tracking-[-0.04em]">
           <Reveal>Your Content,</Reveal>
           <Reveal delay={120}>
             <span className="text-[var(--accent)] text-glow">Elevated.</span>
